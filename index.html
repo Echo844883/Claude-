@@ -1427,5 +1427,13 @@ if (window.claude && claude.use) {
 }
 </script>
 
+<script>
+/* 仅在 https/localhost 下注册；用 file:// 直接打开时浏览器不允许，静默跳过即可 */
+if ("serviceWorker" in navigator && location.protocol === "https:") {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js").catch(() => {});
+  });
+}
+</script>
 </body>
 </html>
