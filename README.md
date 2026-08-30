@@ -4,6 +4,11 @@
 
 在线使用：https://echo844883.github.io/claude-/
 
+## 另一个应用：信标提醒台
+
+同一套设计系统做的网页闹钟——设定时刻、写提醒内容，到点通知并响铃。
+[`/beacon/`](beacon/) · https://echo844883.github.io/Claude-/beacon/
+
 ## 数据存在哪
 
 只存在你自己浏览器的 localStorage 里，不上传任何服务器，本仓库也不会收到你的任何数据。
